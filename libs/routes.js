@@ -49,4 +49,13 @@ FlowRouter.route("/menu",  {
         GAnalytics.pageview();
         BlazeLayout.render("MainLayout", { main: "Menu"});
     }
-}); 
+});
+
+
+FlowRouter.route("/shopping-list", {
+   name: 'shopping-list',
+   action() {
+     GAnalytics.pageview();
+     BlazeLayout.render("MainLayout", { main: "ShoppingList"});
+   }
+});
